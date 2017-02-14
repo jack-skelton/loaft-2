@@ -1,0 +1,82 @@
+$primary-color: #fff;
+
+$accent-text: #000;
+$primary-text: #444;
+$secondary-text: #424242;
+$highlighted-text: #A7FFEB;
+
+$jumbo: 50px;
+$font-stack: 'Source Sans Pro', 'Sans-Serif';
+//------------------------------------------
+
+body, p, h1, h2, h3, h4, h5, h6 {
+    font-family: $font-stack  !important;
+}
+.jumbo {
+    font-size: $jumbo;
+}
+
+
+#landing {
+    background: url(/images/landing.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-box-shadow: inset 0px 0px 15vw 0px rgba(0,0,0,0.8);
+    -moz-box-shadow: inset 0px 0px 15vw 0px rgba(0,0,0,0.8);
+    box-shadow: inset 0px 0px 15vw 0px rgba(0,0,0,0.8);
+
+    color: white;
+
+    .overlay {
+        background-color:rgba(25, 25, 25, 0.60);
+    }
+
+    #heading {
+        text-align: center;
+        h1{
+            font-size: 140px;
+            font-weight: 700;
+            margin-top: 0;
+        }
+        #typer {
+            p {
+                display: inline-block;
+                max-width: 717px;
+                margin-top: 0;
+                width: 717px;
+                font-weight: 400;
+                text-align: left;
+                word-wrap: break-word;
+                strong {
+                    font-weight: 700
+                }
+            }
+            .typed-cursor{
+                font-size: $jumbo;
+                opacity: 1;
+                -webkit-animation: blink 0.7s infinite;
+                -moz-animation: blink 0.7s infinite;
+                animation: blink 0.7s infinite
+            }
+        }
+        padding: 30vh 0px 30vh 0px;
+    }
+}
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
