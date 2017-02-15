@@ -155,6 +155,15 @@ nav
            width: 100px;
            margin: 20px;
        } 
+       
+    .col.s6.m6{
+        @media only screen and (min-width: 740px) {
+         #jack{float:right;margin-right: 30px;
+        }
+        #karl{float:left;margin-left: 30px;
+        }
+    }
+    }
       .col.s12{
           
           
@@ -162,6 +171,7 @@ nav
           p{
               width: 50%;
               margin: 0 auto;
+              padding-bottom: 50px;
           }
            }
       }
@@ -169,38 +179,92 @@ nav
        }
     #services {
         padding-top: 20vh;
+        
+        
+        
         .blurb-container{
             position: relative;
             min-height: 150px;
             
             li {position: absolute; opacity: 0;  transition: opacity .25s ease-in-out;
-   -moz-transition: opacity .25s ease-in-out;
-   -webkit-transition: opacity .25s ease-in-out;}
+                -moz-transition: opacity .25s ease-in-out;
+                -webkit-transition: opacity .25s ease-in-out;}
             .opacity{opacity: 1; }
         }
         .buckets1{
-            background-color: aquamarine;
-                position: relative;       
-        }
-        .buckets2{
-            background-color: darksalmon;
-                position: relative;       
-        }
-        .buckets3{
-            background-color: lawngreen;
-                position: relative;       
-        }
-    }
-    #work{
-        h1{
-            display: block;
-            font-size: 300px;
-             top: -2.86364rem;
-             right: 5.45455rem;
+                background-color: #FFF6E6;
+                position: relative;  
+                height: 400px;  
+                padding: 0;
+                overflow: hidden; 
+                .cock-content {
+                background-color: white;
                 
+                width: 100%;
+                position: absolute;
+                bottom: -400px;
+                
+                transition: all 0.5s ease;
+                }
+        
         }
+        .buckets1:hover .cock-content {
+                background-color: mintcream;
+                bottom: 0px;
+                }  
+        .buckets2{
+             background-color: #fd5c63;
+                position: relative;  
+                height: 400px;  
+                padding: 0;
+                overflow: hidden;  
+                .dick-content {
+                background-color: white;
+                
+                width: 100%;
+                position: absolute;
+                bottom: -400px;
+                
+                transition: all 0.5s ease;
+                }   
+        }
+        .buckets2:hover .dick-content {
+                background-color: mintcream;
+                bottom: 0px;
+                }  
+        .buckets3{
+             background-color: #76daff;
+                position: relative;  
+                height: 400px;  
+                padding: 0;
+                overflow: hidden;  
+                .wang-content {
+                background-color: white;
+                
+                width: 100%;
+                position: absolute;
+                bottom: -400px;
+                
+                transition: all 0.5s ease;
+                }     
+        }
+        .buckets3:hover .wang-content {
+                background-color: mintcream;
+                bottom: 0px;
+                }  
+        
     }
 }
+                    #work{
+                        h1{
+                            display: block;
+                            font-size: 300px;
+                            top: -2.86364rem;
+                            right: 5.45455rem;
+                                
+                        }
+                    }
+
 
 .typed-cursor{
     opacity: 1;
