@@ -42,4 +42,33 @@ $(function(){
       });
     });
  */
+
+
+$(document).ready(function() {     
+    $('.buckets1').hover(function(){     
+        $('.line1').addClass('.blurb-container opacity');
+        $('.line0').removeClass('.blurb-container opacity');    
+    },     
+    function(){    
+        $('.line1').removeClass('.blurb-container opacity');
+        $('.line0').addClass('.blurb-container opacity');      
+    });
+     $('.buckets2').hover(function(){     
+        $('.line2').addClass('.blurb-container opacity');
+        $('.line0').removeClass('.blurb-container opacity');    
+    },     
+    function(){    
+        $('.line2').removeClass('.blurb-container opacity');
+        $('.line0').addClass('.blurb-container opacity');      
+    });
+     $('.buckets3').hover(function(){     
+        $('.line3').addClass('.blurb-container opacity');
+        $('.line0').removeClass('.blurb-container opacity');    
+    },     
+    function(){    
+        $('.line3').removeClass('.blurb-container opacity');
+        $('.line0').addClass('.blurb-container opacity');      
+    });
+});  
+
     

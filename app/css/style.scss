@@ -139,10 +139,39 @@ nav
             }
 
        }
-   }
+    #services {
 
-#buttstuff{
-    visibility: hidden;
+        .blurb-container{
+            position: relative;
+            min-height: 150px;
+            
+            li {position: absolute; opacity: 0;  transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;}
+            .opacity{opacity: 1; }
+        }
+        .buckets1{
+            background-color: aquamarine;
+                position: relative;       
+        }
+        .buckets2{
+            background-color: darksalmon;
+                position: relative;       
+        }
+        .buckets3{
+            background-color: lawngreen;
+                position: relative;       
+        }
+    }
+    #work{
+        h1{
+            display: block;
+            font-size: 300px;
+             top: -2.86364rem;
+             right: 5.45455rem;
+                
+        }
+    }
 }
 
 .typed-cursor{
@@ -167,3 +196,4 @@ nav
     50% { opacity:0; }
     100% { opacity:1; }
 }
+
