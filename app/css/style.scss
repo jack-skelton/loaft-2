@@ -5,26 +5,25 @@ $primary-text: #444;
 $secondary-text: #424242;
 $highlighted-text: #A7FFEB;
 
-$jumbo: 50px;
 $font-stack: 'Source Sans Pro', 'Helvetica', 'Sans-Serif';
 //------------------------------------------
 
+html {font-size:62.5% !important;}
+body, a, p {font-size: 1.4rem !important;}
+
 body, span,  p, h1, h2, h3, h4, h5, h6 {
-    font-family: $font-stack  !important;
+    font-family: $font-stack !important;
     font-weight: 300;
 }
 
-.jumbo {
-    font-size: $jumbo;
-}
 
 nav
 {
-    ul a{padding: 0; line-height: 0; position:relative; padding: 1.9625rem;}
+    ul a{padding: 0; line-height: 0; position:relative; padding: 1.9625rem; }
     position: fixed;
     box-shadow: none;
     background-color: transparent;
-    .nav-text{position: relative; display: inline-block;}
+    .nav-text{position: relative; display: inline-block; }
     .nav-text::after{position: absolute;
     right: 0;
     bottom: -13px;
@@ -43,11 +42,10 @@ nav
         -webkit-transform: scaleX(1);
     -ms-transform: scaleX(1);
     transform: scaleX(1);
-    }
-    
-
-   
+    } 
 }
+
+
 #landing {
     background: url(/images/landing.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -65,39 +63,63 @@ nav
         height: 100vh;
     }
 
-    #heading {
-        text-align: center;
-        position: fixed;
-        h1{
-            font-size: 140px;
-            font-weight: 700;
-            margin-top: 0;
-            
+    $header-size: 5rem;
+    @media only screen and (max-width: 599px) {
+        #heading {display: none};
+        #heading-mobile {
+            display: table;
+            height: 100vh;
+            width: 100%;
+            text-align: center;
+            h1{
+                display: table-cell;
+                vertical-align: middle;
+                font-size: 0.65 * $header-size;
+                strong{font-weight: 600;}
+            }          
+            .typed-cursor{font-size: 0.65 * $header-size}
         }
-        #typer {
-            p {
-                display: inline-block;
-                margin-left: 10px;
-                margin-top: 0;
-                width: auto;
-                font-weight: 400;
-                text-align: left;
+        
+    }
+    @media only screen and (min-width: 600px) {
+        #heading-mobile{display:none};
+        #heading {
+            $type-width-1: 689;
+            $type-width-2: 788;
+            #typer {
+                margin: auto;
+                padding-top:40vh;
                 word-wrap: break-word;
-                strong {
-                    font-weight: 700
+                width: $type-width-2;
+                &.typer-change{width: $type-width-1 !important}; 
+                
+                h1 {
+                    display: inline-block;
+                    font-size: $header-size;
+
+                    strong {
+                        font-weight: 600;
+                    }
+                }
+                .typed-cursor{font-size: $header-size};
+                
+                @media only screen and (max-width: 1140px) {
+                    width: 0.8 * $type-width-2;
+                    &.typer-change{width: 0.8 * $type-width-1 !important}; 
+                    h1 {font-size: 0.8 * $header-size}                 
+                    .typed-cursor{font-size: 0.8 * $header-size}
+                }
+                @media only screen and (max-width: 740px) {
+                    width: 0.65 * $type-width-2;
+                    &.typer-change{width: 0.65 * $type-width-1 !important}; 
+                    h1 {font-size: 0.65 * $header-size}                 
+                    .typed-cursor{font-size: 0.65 * $header-size}
                 }
             }
-            .typed-cursor{
-                font-size: $jumbo;
-                opacity: 1;
-                -webkit-animation: blink 0.7s infinite;
-                -moz-animation: blink 0.7s infinite;
-                animation: blink 0.7s infinite
-            }
         }
-        padding: 40vh 0px 40vh 0px;
     }
 }
+
 #content {
   background-color: white;
 
@@ -122,6 +144,14 @@ nav
 #buttstuff{
     visibility: hidden;
 }
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite
+}
+
 @keyframes blink{
     0% { opacity:1; }
     50% { opacity:0; }
