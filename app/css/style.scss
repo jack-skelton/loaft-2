@@ -9,17 +9,18 @@ $font-stack: 'Source Sans Pro', 'Helvetica', 'Sans-Serif';
 //------------------------------------------
 
 html {font-size:62.5% !important;}
-body, a, p {font-size: 1.4rem !important;}
+body, a, p {font-size: 2.5rem !important; line-height: 4rem;}
 
 body, span,  p, h1, h2, h3, h4, h5, h6 {
     font-family: $font-stack !important;
     font-weight: 300;
+    
 }
 
 
 nav
 {
-    ul a{padding: 0; line-height: 0; position:relative; padding: 1.9625rem; }
+    ul a{padding: 0; line-height: 0; position:relative; padding: 3rem; }
     position: fixed;
     box-shadow: none;
     background-color: transparent;
@@ -124,23 +125,34 @@ nav
   background-color: white;
 
    #about-us {
-      
+       
        padding-top: 20vh;
-       height: 50vh;
+     
+       
        h1{
          font-weight: 700;
          font-size: 5.625rem;
          margin: 0 auto;
-         
-       
         }
-       p {
-           font-size: 1.4125rem;
-            }
+       img{
+           border-radius: 50%;
+           width: 100px;
+           margin: 20px;
+       } 
+      .col.s12{
+          
+          
+           @media only screen and (min-width: 740px) {
+          p{
+              width: 50%;
+              margin: 0 auto;
+          }
+           }
+      }
 
        }
     #services {
-
+        padding-top: 20vh;
         .blurb-container{
             position: relative;
             min-height: 150px;
