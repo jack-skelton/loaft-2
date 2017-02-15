@@ -6,43 +6,59 @@ $secondary-text: #424242;
 $highlighted-text: #A7FFEB;
 
 $font-stack: 'Source Sans Pro', 'Helvetica', 'Sans-Serif';
+$font-size: 2.5rem;
 //------------------------------------------
 
 html {font-size:62.5% !important;}
-body, a, p {font-size: 2.5rem !important; line-height: 4rem;}
+body, a, p {font-size: $font-size !important; line-height: 4rem;}
 
 body, span,  p, h1, h2, h3, h4, h5, h6 {
     font-family: $font-stack !important;
     font-weight: 300;
-    
 }
 
 
 nav
 {
-    ul a{padding: 0; line-height: 0; position:relative; padding: 3rem; }
+    #logo {
+        font-size: 2rem;
+        padding: 1.5rem 1rem;
+        border: 2px solid #ddd;
+        margin: 1.3rem;
+        line-height: 0;
+    }
+    
+    ul a {
+        line-height: 0; 
+        position:relative;
+        padding: 3rem;
+        font-size: 2rem !important;
+    }
+
     position: fixed;
     box-shadow: none;
     background-color: transparent;
+
+    
     .nav-text{position: relative; display: inline-block; }
     .nav-text::after{position: absolute;
-    right: 0;
-    bottom: -13px;
-    left: 0;
-    border-bottom: 2px solid;
-    content: "";
-    -webkit-transition: -webkit-transform .45s cubic-bezier(.4,0,.2,1);
-     transition: -webkit-transform .45s cubic-bezier(.4,0,.2,1); 
-    transition: transform .45s cubic-bezier(.4,0,.2,1);
-     transition: transform .45s cubic-bezier(.4,0,.2,1),-webkit-transform .45s cubic-bezier(.4,0,.2,1);
-      -webkit-transform: scaleX(0);
-    -ms-transform: scaleX(0);
-    transform: scaleX(0);
-     }
+        right: 0;
+        bottom: -13px;
+        left: 0;
+        border-bottom: 2px solid;
+        content: "";
+        -webkit-transition: -webkit-transform .45s cubic-bezier(.4,0,.2,1);
+        transition: -webkit-transform .45s cubic-bezier(.4,0,.2,1); 
+        transition: transform .45s cubic-bezier(.4,0,.2,1);
+        transition: transform .45s cubic-bezier(.4,0,.2,1),-webkit-transform .45s cubic-bezier(.4,0,.2,1);
+        -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+        transform: scaleX(0);
+    }
     .nav-text:hover:after{
         -webkit-transform: scaleX(1);
-    -ms-transform: scaleX(1);
-    transform: scaleX(1);
+        -ms-transform: scaleX(1);
+        transform: scaleX(1);
     } 
 }
 
