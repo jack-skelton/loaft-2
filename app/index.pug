@@ -4,19 +4,52 @@ html
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
         link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js")
+        link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
         <!-- Typing animation -->
         script(src="/js/typed.js")
         <!- General -->
         link(rel="stylesheet" href="css/style.css")
         link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700")
         script(src="/js/init.js")
-
+        <!- Reveal elements on scroll -->
+        script(src='https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js')
+        script.
+            window.sr = ScrollReveal();
+            
     body
+        nav
+            .nav-wrapper
+                ul#nav-mobile.right.hide-on-med-and-down
+                        li
+                            a(href='#about-us') 
+                                span.nav-text About
+                        li
+                            a(href='') 
+                                span.nav-text Projects
+                        li
+                            a(href='') 
+                                span.nav-text Contact
+              
         #landing
             .overlay
                 .container
                     #heading
-                        h1 Loaft
-                        #typer
-                            p.jumbo
-                                span.element
+                        .left-align 
+                            #typer
+                                p.jumbo
+                                    span.dingo
+                                p.jumbo
+                                    span.element
+                                    
+        #content
+            .container
+                #about-us
+                    .row
+                        .col.s12.m6
+                            h1 Passion
+                        .col.s12.m6  
+                            p We exist to elevate your brand. Loaft brings together expertise from multiple disciplines to create engaging user experiences. We strive to bring your digital brand to the forefront of the market.  
+                      
+
+        script.
+            sr.reveal('nav',{ duration: 2000 });                                 

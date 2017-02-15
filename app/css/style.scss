@@ -6,17 +6,48 @@ $secondary-text: #424242;
 $highlighted-text: #A7FFEB;
 
 $jumbo: 50px;
-$font-stack: 'Source Sans Pro', 'Sans-Serif';
+$font-stack: 'Source Sans Pro', 'Helvetica', 'Sans-Serif';
 //------------------------------------------
 
-body, p, h1, h2, h3, h4, h5, h6 {
+body, span,  p, h1, h2, h3, h4, h5, h6 {
     font-family: $font-stack  !important;
+    font-weight: 300;
 }
+
 .jumbo {
     font-size: $jumbo;
 }
 
+nav
+{
+    ul a{padding: 0; line-height: 0; position:relative; padding: 1.9625rem;}
+    position: fixed;
+    box-shadow: none;
+    background-color: transparent;
+    .nav-text{position: relative; display: inline-block;}
+    .nav-text::after{position: absolute;
+    right: 0;
+    bottom: -13px;
+    left: 0;
+    border-bottom: 2px solid;
+    content: "";
+    -webkit-transition: -webkit-transform .45s cubic-bezier(.4,0,.2,1);
+     transition: -webkit-transform .45s cubic-bezier(.4,0,.2,1); 
+    transition: transform .45s cubic-bezier(.4,0,.2,1);
+     transition: transform .45s cubic-bezier(.4,0,.2,1),-webkit-transform .45s cubic-bezier(.4,0,.2,1);
+      -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+     }
+    .nav-text:hover:after{
+        -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
+    }
+    
 
+   
+}
 #landing {
     background: url(/images/landing.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -26,26 +57,29 @@ body, p, h1, h2, h3, h4, h5, h6 {
     -webkit-box-shadow: inset 0px 0px 15vw 0px rgba(0,0,0,0.8);
     -moz-box-shadow: inset 0px 0px 15vw 0px rgba(0,0,0,0.8);
     box-shadow: inset 0px 0px 15vw 0px rgba(0,0,0,0.8);
-
+    height: 100vh;
     color: white;
 
     .overlay {
         background-color:rgba(25, 25, 25, 0.60);
+        height: 100vh;
     }
 
     #heading {
         text-align: center;
+        position: fixed;
         h1{
             font-size: 140px;
             font-weight: 700;
             margin-top: 0;
+            
         }
         #typer {
             p {
                 display: inline-block;
-                max-width: 717px;
+                margin-left: 10px;
                 margin-top: 0;
-                width: 717px;
+                width: auto;
                 font-weight: 400;
                 text-align: left;
                 word-wrap: break-word;
@@ -61,10 +95,33 @@ body, p, h1, h2, h3, h4, h5, h6 {
                 animation: blink 0.7s infinite
             }
         }
-        padding: 30vh 0px 30vh 0px;
+        padding: 40vh 0px 40vh 0px;
     }
 }
+#content {
+  background-color: white;
 
+   #about-us {
+      
+       padding-top: 20vh;
+       height: 50vh;
+       h1{
+         font-weight: 700;
+         font-size: 5.625rem;
+         margin: 0 auto;
+         
+       
+        }
+       p {
+           font-size: 1.4125rem;
+            }
+
+       }
+   }
+
+#buttstuff{
+    visibility: hidden;
+}
 @keyframes blink{
     0% { opacity:1; }
     50% { opacity:0; }

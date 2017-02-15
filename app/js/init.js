@@ -1,11 +1,27 @@
 $(function(){
       $(".element").typed({
         //strings: ["web developers.", "graphic designers.","solution architects."],
-        strings: ["modern <strong>Web</strong> and <strong>Graphic</strong> design.", "increase your <b>Digital</b> reach."],
-        typeSpeed: 30,
+        strings: ["modern <strong>Web</strong> and <strong>Graphic</strong> design.", "digital specialists and growth hackers", ],
+        typeSpeed: 10,
         loop: true,
-        showCursor: true,
-        backDelay: 3000,
-        startDelay: 0
+        showCursor: false,
+        backDelay: 2000,
+        startDelay: 2000
       });
     });
+
+$(function(){
+      $(".dingo").typed({
+        //strings: ["web developers.", "graphic designers.","solution architects."],
+        strings: ["loaft "],
+        typeSpeed: 30,
+        loop: false,
+        showCursor: true,
+        backDelay: 3000,
+        startDelay: 500
+      });
+    });
+
+
+
+    
