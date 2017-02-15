@@ -20,26 +20,34 @@ body, span,  p, h1, h2, h3, h4, h5, h6 {
 
 nav
 {
+    height: 5rem;
+    position: fixed;
+    box-shadow: none;
+    background-color: rgba(0,0,0,0.0);
+    &.below-landing {
+        background-color: rgba(0,0,0,0.9);
+        -webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.6);
+        -moz-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.6);
+        box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.6);
+    }
+    -webkit-transition: background-color 500ms cubic-bezier(0.000, 0.000, 0.100, 0.860);     
+    transition: background-color 500ms cubic-bezier(0.000, 0.000, 0.100, 0.860);
+
     #logo {
         font-size: 2rem;
         padding: 1.5rem 1rem;
         border: 2px solid #ddd;
-        margin: 1.3rem;
+        margin: 0.8rem;
         line-height: 0;
     }
-    
     ul a {
         line-height: 0; 
         position:relative;
-        padding: 3rem;
+        padding: 2.5rem;
         font-size: 2rem !important;
     }
 
-    position: fixed;
-    box-shadow: none;
-    background-color: transparent;
-
-    
+    //under hover effects
     .nav-text{position: relative; display: inline-block; }
     .nav-text::after{position: absolute;
         right: 0;

@@ -1,19 +1,30 @@
 
 
 $(function(){ 
-  $(".element").typed({
-    //strings: ["web developers.", "graphic designers.","solution architects."],
-    //"modern <strong>web</strong> and <strong>fraphic</strong> design. "<strong>digital</strong> specialists and <strong>growth</strong> hackers"
-    strings: ["modern <strong>web</strong> and <strong>graphic</strong> design.", "<strong>digital</strong> specialists and <strong>growth</strong> hackers"],
-    typeSpeed: 30,
-    loop: true,
-    showCursor: true,
-    backDelay: 3500,
-    startDelay: 0,
-    preStringTyped: function() {
-      $("#typer").toggleClass("typer-change")
-    }
-  })
+        $(".element").typed({
+        //strings: ["web developers.", "graphic designers.","solution architects."],
+        //"modern <strong>web</strong> and <strong>fraphic</strong> design. "<strong>digital</strong> specialists and <strong>growth</strong> hackers"
+        strings: ["modern <strong>web</strong> and <strong>graphic</strong> design.", "<strong>digital</strong> specialists and <strong>growth</strong> hackers"],
+        typeSpeed: 30,
+        loop: true,
+        showCursor: true,
+        backDelay: 3500,
+        startDelay: 0,
+        preStringTyped: function() {
+            $("#typer").toggleClass("typer-change")
+        }
+    })
+});
+
+// Scrollmagic Init
+// To udnerstand how works: http://scrollmagic.io/examples/basic/scene_manipulation.html
+$(function(){ 
+    var controller = new ScrollMagic.Controller();
+
+	new ScrollMagic.Scene({triggerElement: "#about-us", triggerHook: 0, offset: -50})
+        .setClassToggle("nav", "below-landing") // add class toggle
+        .addTo(controller);
+
 });
 
 
