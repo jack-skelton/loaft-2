@@ -21,10 +21,21 @@ $(function(){
 $(function(){ 
     var controller = new ScrollMagic.Controller();
 
-	new ScrollMagic.Scene({triggerElement: "#about-us", triggerHook: 0, offset: -50})
+	new ScrollMagic.Scene({triggerElement: "#about", triggerHook: 0, offset: -50})
         .setClassToggle("nav", "below-landing") // add class toggle
         .addTo(controller);
-
+	new ScrollMagic.Scene({triggerElement: "#typer", triggerHook: 0, offset: 100})
+        .setClassToggle("nav", "scrolled-landing") // add class toggle
+        .addTo(controller);
+	new ScrollMagic.Scene({triggerElement: "#about", triggerHook: 0.5})
+        .setClassToggle("#nav-about", "active") // add class toggle
+        .addTo(controller);
+    new ScrollMagic.Scene({triggerElement: "#services", triggerHook: 0.5})
+        .removeClassToggle("#nav-about", "active") // add class toggle
+        .addTo(controller);
+    new ScrollMagic.Scene({triggerElement: "#services", triggerHook: 0.5})
+        .setClassToggle("#nav-services", "active") // add class toggle
+        .addTo(controller);
 });
 
 

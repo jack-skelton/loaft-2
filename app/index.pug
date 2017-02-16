@@ -25,12 +25,12 @@ html
         nav
             .nav-wrapper
                 a.left(id="logo" href="#") <strong>Loaft</strong>
-                ul.right.hide-on-med-and-down
-                        li
-                            a(href='#about-us') 
+                ul.right.hide-on-small-only
+                        li#nav-about
+                            a(href='#about') 
                                 span.nav-text About
-                        li
-                            a(href='#work') 
+                        li#nav-services
+                            a(href='#Services') 
                                 span.nav-text Services
                         li
                             a(href='') 
@@ -52,7 +52,7 @@ html
         #content
             
             .container
-                #about-us
+                #about
                     .row.center-align
                         
                         .col.s12
