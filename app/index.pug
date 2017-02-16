@@ -21,6 +21,7 @@ html
             window.sr = ScrollReveal();
         <!- Scroll animations -->
         script(src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js")
+        meta(name='viewport', content='width=device-width, initial-scale=1')
             
     body
         nav
@@ -156,31 +157,50 @@ html
                 #work.scrollspy
                     .row
                         .col.s12.m6.offset-m6
-                            h2.boxed-title Work<span class="typed-cursor">|</span>
-                        .col.s12
+                            h2.boxed-title.right-align Work<span class="typed-cursor">|</span>
+                        .col.s12.m3
+                            h3  We take great pride in the long-term relationships we share our clients.<br> <br>Here is a sample of our work.
+                        .col.s12.m9
                             
-                            .main-carousel(data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround":true, "pageDots": false, "prevNextButtons": false, "imagesLoaded": true }')
+                            .main-carousel(data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround":false, "pageDots": false, "prevNextButtons": false, "imagesLoaded": true }')
                                 .carousel-cell 
-                                    img(src='http://assets.barcroftmedia.com.s3-website-eu-west-1.amazonaws.com/assets/images/recent-images-11.jpg')
+                                    img(src='/images/1.jpg')
                                     .project-name.left-align
                                         h4 Gamerholic
                                         h5 Gaming studio redesign
                                 .carousel-cell 
-                                    img(src='http://assets.barcroftmedia.com.s3-website-eu-west-1.amazonaws.com/assets/images/recent-images-11.jpg')
+                                    img(src='/images/2.jpg')
                                     .project-name.left-align
                                         h4 Chinese Shit  
                                         h5 Chines design shit
                                 .carousel-cell
-                                    img(src='http://assets.barcroftmedia.com.s3-website-eu-west-1.amazonaws.com/assets/images/recent-images-11.jpg')
+                                    img(src='/images/3.jpg')
                                     .project-name.left-align
                                         h4 Numberz
                                 .carousel-cell 
-                                    img(src='http://assets.barcroftmedia.com.s3-website-eu-west-1.amazonaws.com/assets/images/recent-images-11.jpg')
+                                    img(src='/images/4.jpg')
                                     .project-name.left-align
-                                        h4 More Chinese           
-                #contact.scrollspy
-                    .row
-                        .col.s12       
+                                        h4 More Chinese  
+                                .carousel-cell 
+                                    img(src='/images/5.jpg')
+                                    .project-name.left-align
+                                        h4 More Chinese 
+                        
+        #contact.scrollspy
+            .row
+                .col.s12.m6
+                    h1 Let's get in touch
+                    .row.boxed-title
+                        form.col.s12
+                            .row
+                            .input-field.col.s6
+                                i.material-icons.prefix mode_edit
+                                textarea#icon_prefix2.materialize-textarea
+                                label(for='icon_prefix2') First Name
+                .col.s12.m6
+                    h1 Loaft
+                    h2 Sydney Australia
+                    h2 help@loaft.com.au
 
         script.
             sr.reveal('nav',{ duration: 2000 });                                 
