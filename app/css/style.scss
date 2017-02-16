@@ -184,7 +184,10 @@ nav
         }
     }
 }
-
+.boxed-title{border-color: black;
+        padding: 1.5rem 1rem;
+        border: 2px solid grey;
+        }
 #content {
   background-color: white;
 
@@ -212,17 +215,7 @@ nav
         }
     }
     }
-      .col.s12{
-          
-          
-           @media only screen and (min-width: 740px) {
-          p{
-              width: 50%;
-              margin: 0 auto;
-              padding-bottom: 50px;
-          }
-           }
-      }
+      
 
        }
     #services {
@@ -233,6 +226,7 @@ nav
         .blurb-container{
             position: relative;
             min-height: 150px;
+            margin: 0.8rem;
             
             li {position: absolute; opacity: 0;  transition: opacity .25s ease-in-out;
                 -moz-transition: opacity .25s ease-in-out;
@@ -275,7 +269,7 @@ nav
                 bottom: 200px;
                 }       
         .buckets2{
-             background-color: #fd5c63;
+             background-color: white;
                 position: relative;  
                 height: 400px;  
                 padding: 0;
@@ -291,17 +285,17 @@ nav
                 }   
         }
         .buckets2:hover .dick-content {
-                background-color: mintcream;
+                background-color: #fd5c63;
                 bottom: 0px;
                 }  
         .buckets3{
-             background-color: #76daff;
+             background-color: white;
                 position: relative;  
                 height: 400px;  
                 padding: 0;
                 overflow: hidden;  
                 .wang-content {
-                background-color: white;
+                background-color: mintcream;
                 
                 width: 100%;
                 position: absolute;
@@ -311,13 +305,14 @@ nav
                 }     
         }
         .buckets3:hover .wang-content {
-                background-color: mintcream;
+                background-color:#76daff ;
                 bottom: 0px;
                 }  
         
     }
 }
                     #work{
+                    padding-top: 20vh;
                         h1{
                             display: block;
                             font-size: 300px;
