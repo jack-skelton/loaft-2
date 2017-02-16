@@ -24,19 +24,6 @@ nav
     height: 5rem;
     position: fixed;
     box-shadow: none;
-    
-    background-color: rgba(0,0,0,0.0);
-    &.scrolled-landing {
-        
-        //background-color: rgba(0,0,0,0.2);     // I THINK IT LOOKS BETTER WITHOUT SCROLLED-LANDING
-    }
-    &.below-landing {
-        
-        background-color: rgba(0,0,0,0.9);
-        -webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.6);
-        -moz-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.6);
-        box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.6);
-    }
 
     -webkit-transition: all 500ms cubic-bezier(0.000, 0.000, 0.100, 0.860);     
     transition: all 500ms cubic-bezier(0.000, 0.000, 0.100, 0.860);
@@ -64,13 +51,44 @@ nav
         font-size: 2rem !important;
     }
 
+    //scroll color change
+    background-color: rgba(0,0,0,0.0);
+    &.scrolled-landing {
+        background-color: rgba(0,0,0,0.2);
+    }
+    &.below-landing {
+        background-color: white;
+        border-bottom: 1px solid #f5f5f5;
+
+        #logo {
+            color: black;
+            border-color: black;
+            &:hover {
+                color: white;
+                background-color: black;
+                border: 2px solid black;
+            }
+        }
+        ul a {
+            color: black;
+            &.active {
+                .nav-text:after{
+                border-bottom: 2px solid;
+                -webkit-transform: scaleX(1);
+                -ms-transform: scaleX(1);
+                transform: scaleX(1);
+                } 
+            }
+        }
+    }
+
     //under hover effects
     .nav-text{position: relative; display: inline-block; }
     .nav-text::after{position: absolute;
         right: 0;
         bottom: -13px;
         left: 0;
-        border-bottom: 2px solid;
+        border-bottom: 1px solid;
         content: "";
         -webkit-transition: -webkit-transform .45s cubic-bezier(.4,0,.2,1);
         transition: -webkit-transform .45s cubic-bezier(.4,0,.2,1); 
@@ -88,6 +106,8 @@ nav
     ul a:hover {
         background-color: transparent !important;
     }
+
+
 }
 
 
