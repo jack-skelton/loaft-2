@@ -222,7 +222,7 @@ nav
 
        }
     #services {
-        padding-top: 20vh;
+        padding-top: 40vh;
         
         
         
@@ -315,7 +315,7 @@ nav
     }
 }
                     #work{
-                    padding-top: 20vh;
+                    padding-top: 40vh;
                         h1{
                             display: block;
                             font-size: 300px;
@@ -323,8 +323,14 @@ nav
                             right: 5.45455rem;
                                 
                         }
+                        .carousel-cell{
+                            img{width:310px; height: 310px;}
+                        }
                     }
-
+#contact{
+    background-color: darkslategray;
+    color: white;
+}
 
 .typed-cursor{
     opacity: 1;
