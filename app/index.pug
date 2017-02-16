@@ -8,6 +8,7 @@ html
         <!-- Typing animation -->
         script(src="/js/typed.js")
         <!- General -->
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
         link(rel="stylesheet" href="css/style.css")
         link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700")
         script(src="/js/init.js")
@@ -38,6 +39,19 @@ html
                         li
                             a(href='#contact') 
                                 span.nav-text Contact
+                ul#nav-mobile.right.hide-on-med-and-up
+                        li#nav-about
+                            a(href='#about') 
+                                .span.nav-text.fa.fa-info-circle(style="line-height: 0")
+                        li#nav-services
+                            a(href='#services') 
+                                .span.nav-text.fa.fa-cogs(style="line-height: 0")
+                        li
+                            a(href='#work') 
+                                .span.nav-text.fa.fa-briefcase(style="line-height: 0")
+                        li
+                            a(href='#contact') 
+                                .span.nav-text.fa.fa-phone(style="line-height: 0")
               
         #landing.scrollspy
             .overlay
