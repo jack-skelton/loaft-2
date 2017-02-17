@@ -90,18 +90,41 @@ html
                 .row
                     .col.s12.m8
                         h2.boxed-title Services<span class="typed-cursor">|</span>
-                        .blurb-container
+                        .blurb-container.hide-on-small-only
                             ul
                                 li.line0.opacity
                                     h4 We specialise in three different areas:
                                 li.line1
                                     h4 Strategy is the foundation of all of our projects. We are focused on ROI and maximising customer engagement.
                                 li.line2
-                                    h4 We go above and beyond client expectations to create a bridge between customers and the
+                                    h4 We go above and beyond client expectations to create a truly unique product aligned with the goals and objectives of your brand.
                                 li.line3
                                     h4 Our projects are built to deliver on a key triad of performance, reliability and scalability. 
-            
-                .row.center-align
+                .row.hide-on-med-and-up
+                    ul.collapsible(data-collapsible='accordion')
+                        li
+                            .collapsible-header
+                                img(width="150" src="http://www.weareplatinum.net/uploads/4/9/7/0/4970931/strategy_orig.jpg") 
+                                i.material-icons filter_drama
+                                | Strategy
+                            .collapsible-body
+                                span Strategy is the foundation of all of our projects. We are focused on ROI and maximising customer engagement.
+                        li
+                            .collapsible-header
+                                img(width="150" src="http://www.starchildglobal.com/assets/Uploads/Creativity1.jpg") 
+                                i.material-icons place
+                                | Creative
+                            .collapsible-body
+                                span We go above and beyond client expectations to create a truly unique product aligned with the goals and objectives of your brand.
+                        li
+                            .collapsible-header
+                                img(width="150" src="http://blogs-images.forbes.com/joshbersin/files/2014/10/t.jpg") 
+                                i.material-icons whatshot
+                                | Technology
+                            .collapsible-body
+                                span Our projects are built to deliver on a key triad of performance, reliability and scalability. 
+
+                .row.center-align.hide-on-small-only
                     .col.s12.m4.buckets1
                         
                         .dick-content 
@@ -153,37 +176,67 @@ html
                                 li
                                     p Back End
                                 
-            #work.scrollspy
+            
+        #work.scrollspy
                     .row
-                        .col.s12.m6.offset-m6
+                        .col.s12.m4.offset-m7
                             h2.boxed-title.right-align Work<span class="typed-cursor">|</span>
-                        .col.s12.m3
-                            h3  We take great pride in the long-term relationships we share our clients.<br> <br>Here is a sample of our work.
-                        .col.s12.m9
-                            
-                            .main-carousel(data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround":false, "pageDots": false, "prevNextButtons": false, "imagesLoaded": true }')
-                                .carousel-cell 
+                        
+                    .mobile-carousel.hide-on-med-and-up(data-flickity='{  "contain": true, "wrapAround":false, "pageDots": true, "prevNextButtons": false, "imagesLoaded": true }')
+                                .carousel-cell
                                     img(src='/images/1.jpg')
-                                    .project-name.left-align
-                                        h4 Gamerholic
+                                    .project-name.center-align
+                                        b Gamerholic
                                         h5 Gaming studio redesign
-                                .carousel-cell 
-                                    img(src='/images/2.jpg')
-                                    .project-name.left-align
-                                        h4 Chinese Shit  
+                                .carousel-cell
+                                    img(src='/images/jack.jpg')
+                                    .project-name.center-align
+                                        b Chinese Shit  
                                         h5 Chines design shit
                                 .carousel-cell
-                                    img(src='/images/3.jpg')
-                                    .project-name.left-align
-                                        h4 Numberz
+                                    img(src='/images/5.jpg')
+                                    .project-name.center-align
+                                        b Numberz
                                 .carousel-cell 
                                     img(src='/images/4.jpg')
+                                    .project-name.center-align
+                                        b More Chinese  
+                                              
+                    .main-carousel.hide-on-small-only(data-flickity='{ "initialIndex": 1,  "wrapAround":false, "pageDots": false, "prevNextButtons": false, "imagesLoaded": true }')
+                                .carousel-cell.letter-b 
+                                    img(src='/images/1.jpg')
                                     .project-name.left-align
-                                        h4 More Chinese  
-                                .carousel-cell 
+                                        b Gamerholic
+                                        h5 Gaming studio redesign
+                                .carousel-cell.letter-b 
+                                    img(src='/images/jack.jpg')
+                                    .project-name.left-align
+                                        b Chinese Shit  
+                                        h5 Chines design shit
+                                .carousel-cell.letter-b
                                     img(src='/images/5.jpg')
                                     .project-name.left-align
-                                        h4 More Chinese 
+                                        b Numberz
+                                .carousel-cell.letter-b 
+                                    img(src='/images/4.jpg')
+                                    .project-name.left-align
+                                        b More Chinese  
+                                .carousel-cell.letter-b  
+                                    img(src='/images/karl.jpg')
+                                    .project-name.left-align
+                                        b More Chinese 
+                                .carousel-cell.letter-b
+                                    img(src='/images/jack.jpg')
+                                    .project-name.left-align
+                                        b Numberz
+                                .carousel-cell.letter-b 
+                                    img(src='/images/1.jpg')
+                                    .project-name.left-align
+                                        b More Chinese  
+                                .carousel-cell.letter-b  
+                                    img(src='/images/2.jpg')
+                                    .project-name.left-align
+                                        b More Chinese                       
 
         //         
             #contact.scrollspy
