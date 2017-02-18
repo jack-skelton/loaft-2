@@ -215,12 +215,15 @@ nav
         
 .show {
     opacity: 1 !important;
-    transition: all 2s ease-out
+    transform: translate3d(0, -50px, 0px);
+    transition: all 1s ease-out
 }
 #content {
+
   background-color: white;
 
    #about {
+       
        opacity: 0;
        padding-top: $gap;
        padding-bottom: $gap;
@@ -248,9 +251,10 @@ nav
 
        }
     #services {
+        
         opacity: 0;
         padding-top: $gap;
-         padding-bottom: $gap;
+         
         
         
         .blurb-container{
@@ -361,6 +365,7 @@ nav
     }
 }
                     #work{
+                       
                         opacity: 0;
                          perspective: 1000px;
                         padding-top: $gap;
