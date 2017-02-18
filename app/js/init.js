@@ -4,15 +4,15 @@ $(function(){
         $(".element").typed({
         //strings: ["web developers.", "graphic designers.","solution architects."],
         //"modern <strong>web</strong> and <strong>fraphic</strong> design. "<strong>digital</strong> specialists and <strong>growth</strong> hackers"
-        strings: ["modern <strong>web</strong> and <strong>graphic</strong> design.", "<strong>digital</strong> specialists and <strong>growth</strong> hackers"],
+        strings: ["modern <strong>web</strong> and <strong>graphic</strong> design", "<strong>digital</strong> specialists and <strong>growth</strong> hackers", "a design studio called <strong>Loaft.</strong>"],
         typeSpeed: 30,
-        loop: true,
+        loop: false,
         showCursor: true,
-        backDelay: 3500,
-        startDelay: 0,
-        preStringTyped: function() {
+        backDelay: 2000,
+        startDelay: 0
+        /*preStringTyped: function() {
             $("#typer").toggleClass("typer-change")
-        }
+        }*/
     })
 });
 
@@ -27,15 +27,16 @@ $(function(){
 	new ScrollMagic.Scene({triggerElement: "#typer", triggerHook: 0, offset: 100})
         .setClassToggle("nav", "scrolled-landing") // add class toggle
         .addTo(controller);
-    new ScrollMagic.Scene({triggerElement: "#about", triggerHook: 0.8})
+    new ScrollMagic.Scene({triggerElement: "#about", triggerHook: 0.9})
         .setClassToggle("#about", "show") // add class toggle
         .addTo(controller);
-    new ScrollMagic.Scene({triggerElement: "#services", triggerHook: 0.60})
+    new ScrollMagic.Scene({triggerElement: "#services", triggerHook: 0.9})
         .setClassToggle("#services", "show") // add class toggle
         .addTo(controller);
     new ScrollMagic.Scene({triggerElement: "#work", triggerHook: 0.60})
         .setClassToggle("#work", "show") // add class toggle
         .addTo(controller)
+
     
 });
 

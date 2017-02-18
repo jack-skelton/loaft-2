@@ -215,7 +215,7 @@ nav
         
 .show {
     opacity: 1 !important;
-    transition: all 1s ease-out
+    transition: all 2s ease-out
 }
 #content {
   background-color: white;
@@ -223,6 +223,7 @@ nav
    #about {
        opacity: 0;
        padding-top: $gap;
+       padding-bottom: $gap;
        
        h1{
          font-weight: 700;
@@ -249,7 +250,7 @@ nav
     #services {
         opacity: 0;
         padding-top: $gap;
-        
+         padding-bottom: $gap;
         
         
         .blurb-container{
@@ -263,12 +264,12 @@ nav
             .opacity{opacity: 1; }
         }
         .buckets1{
-                background-color: #FFF6E6;
+                
                 position: relative;  
                 height: 400px;  
                 padding: 0;
                 overflow: hidden; 
-                .cock-content {
+                .slide-content {
                 background-color: white;
                 
                 width: 100%;
@@ -277,7 +278,7 @@ nav
                 
                 transition: all 0.5s ease;
                 }
-                .dick-content {
+                .top-content {
                 background-color: white;
                 
                 width: 100%;
@@ -289,33 +290,41 @@ nav
                 }
         
         }
-        .buckets1:hover .cock-content {
-                background-color: mintcream;
+        .buckets1:hover .slide-content {
+                background-color: #fd5c63;
                 bottom: 0px;
                 } 
-        .buckets1:hover .dick-content {
-                
-                bottom: 200px;
+        .buckets1:hover .top-content {
+                bottom: 250px;
                 }       
         .buckets2{
-             background-color: white;
+             
                 position: relative;  
                 height: 400px;  
                 padding: 0;
                 overflow: hidden;  
-                .dick-content {
+                .slide-content {
                 background-color: white;
-                
                 width: 100%;
                 position: absolute;
                 bottom: -400px;
-                
                 transition: all 0.5s ease;
-                }   
-        }
-        .buckets2:hover .dick-content {
-                background-color: #fd5c63;
+                }  
+                .top-content {
+                background-color: white;
+                width: 100%;
+                height: 100%;
+                position: absolute;
                 bottom: 0px;
+                transition: all 0.5s ease;
+                } 
+        }
+        .buckets2:hover .slide-content {
+                background-color: #ffd740;
+                bottom: 0px;
+                }  
+        .buckets2:hover .top-content {
+                bottom: 250px;
                 }  
         .buckets3{
              background-color: white;
@@ -323,21 +332,31 @@ nav
                 height: 400px;  
                 padding: 0;
                 overflow: hidden;  
-                .wang-content {
+                .slide-content {
                 background-color: mintcream;
-                
                 width: 100%;
                 position: absolute;
-                bottom: 0px;
-                opacity: 0;
+                bottom: -400px;
+                
                 transition: all 0.5s ease;
-                }     
+                }  
+                .top-content {
+                background-color: white;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                bottom: 0px;
+                transition: all 0.5s ease;
+                }  
         }
-        .buckets3:hover .wang-content {
-                background-color:#728DA5 ;
-                opacity: 1;
+        .buckets3:hover .slide-content {
+                background-color:#448aff ;
+                
                 bottom: 0px;
                 }  
+         .buckets3:hover .top-content {
+                bottom: 250px;
+                }
         
     }
 }
@@ -346,6 +365,7 @@ nav
                          perspective: 1000px;
                         padding-top: $gap;
                         padding-bottom: 20vh;
+
                         h1{
                             display: block;
                             font-size: 300px;
@@ -353,12 +373,13 @@ nav
                             right: 5.45455rem;
                                 
                         }
-                        .main-carousel{  margin-left: -200; height: 400px; transform: rotateY(-10deg); }
+                        .main-carousel{ top: 5vh;  margin-left: -200; height: 400px; transform: rotateY(-10deg); 
                         .carousel-cell{
+                            padding: 15px;
                             
-                            
-                            img{width: 400px; max-width:1000px; max-height: 1000px;}
+                            img{ width: 400px; max-width:1000px; max-height: 1000px;}
                             transition: all .2s ease-in-out;
+                        }
                         }
                         .carousel-cell.is-selected {
                         -webkit-filter: blur(0px);
