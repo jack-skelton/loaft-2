@@ -197,7 +197,7 @@ nav
         
 .show {
     opacity: 1 !important;
-    transition: all 1s ease-out
+    transition: all 2s ease-out
 }
 #content {
   background-color: white;
@@ -205,6 +205,7 @@ nav
    #about {
        opacity: 0;
        padding-top: $gap;
+       padding-bottom: $gap;
        
        h1{
          font-weight: 700;
@@ -231,7 +232,7 @@ nav
     #services {
         opacity: 0;
         padding-top: $gap;
-        
+         padding-bottom: $gap;
         
         
         .blurb-container{
@@ -325,8 +326,8 @@ nav
 }
                     #work{
                          perspective: 1000px;
-                        padding-top: 40vh;
-                        padding-bottom: 20vh;
+                        
+                        
                         h1{
                             display: block;
                             font-size: 300px;
@@ -334,11 +335,11 @@ nav
                             right: 5.45455rem;
                                 
                         }
-                        .main-carousel{  margin-left: -200; height: 400px; transform: rotateY(-10deg); }
+                        .main-carousel{ top: $gap;  margin-left: -200; height: 400px; transform: rotateY(-10deg); }
                         .carousel-cell{
                             
                             
-                            img{width: 400px; max-width:1000px; max-height: 1000px;}
+                            img{ width: 400px; max-width:1000px; max-height: 1000px;}
                             transition: all .2s ease-in-out;
                         }
                         .carousel-cell.is-selected {
