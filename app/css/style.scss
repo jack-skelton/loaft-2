@@ -6,7 +6,7 @@ $primary-darkest: #042037;
 
 $accent-text: #000;
 $primary-text: #444;
-$secondary-text: #424242;
+$secondary-text: #aaa;
 $highlighted-text: #A7FFEB;
 
 $font-stack: 'Source Sans Pro', 'Helvetica', 'Sans-Serif';
@@ -17,6 +17,7 @@ $gap: 15vh;
 
 html {font-size:62.5% !important;}
 body, a, p {font-size: $font-size !important; line-height: 4rem;}
+input, textarea {font-size: 2rem !important; line-height: normal !important;}
 
 body, span,  p, h1, h2, h3, h4, h5, h6 {
     font-family: $font-stack !important;
@@ -24,6 +25,14 @@ body, span,  p, h1, h2, h3, h4, h5, h6 {
 }
 
 h5,h6, { font-weight: 400;}
+
+::-webkit-input-placeholder {color: $secondary-text !important; opacity: 1;}
+::-moz-placeholder {color: $secondary-text !important; opacity: 1;}
+:-ms-input-placeholder {color: $secondary-text !important; opacity: 1;}
+:-moz-placeholder {color: $secondary-text !important; }
+
+
+//----------------------------------------
 
 
 nav
@@ -369,22 +378,29 @@ nav
                         }
                     }
 #contact{
-    h2, h3, p {color: white !important};
     margin-top: $gap;
-    background-color: $primary;
+    background-color: #FFF2E6;
+    .email {color: $primary}
 
-    .row {
-        margin-bottom: 0;
-        .col:nth-child(1) {
-            text-align: center;
-        }
+    .row {margin-bottom: 0;}
+    h2 {padding-top: 3vh;}
+    p {margin-top: 1vh;}
+    button {
+        background-color: $primary;
+        margin-bottom: 3vh;
     }
-
 }
 
 footer {
-    background-color: $primary-dark;
-    height: 1vh;
+    p {
+        background-color: white;
+        height: 1vh;
+        line-height: 0;
+        padding: 2.5rem;
+        font-weight: 400;
+        font-size: 1.6rem !important; 
+        display: block;
+    }
 }
 
 
