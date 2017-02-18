@@ -33,6 +33,10 @@ $(function(){
     new ScrollMagic.Scene({triggerElement: "#services", triggerHook: 0.60})
         .setClassToggle("#services", "show") // add class toggle
         .addTo(controller);
+    new ScrollMagic.Scene({triggerElement: "#work", triggerHook: 0.60})
+        .setClassToggle("#work", "show") // add class toggle
+        .addTo(controller)
+    
 });
 
 $(document).ready(function(){
