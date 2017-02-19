@@ -21,7 +21,7 @@ $(function(){
 $(function(){ 
     var controller = new ScrollMagic.Controller();
 
-	new ScrollMagic.Scene({triggerElement: "#about", triggerHook: 0, offset: -50})
+	new ScrollMagic.Scene({triggerElement: "#about", triggerHook: 0, offset: 0})
         .setClassToggle("nav", "below-landing") // add class toggle
         .addTo(controller);
 	new ScrollMagic.Scene({triggerElement: "#typer", triggerHook: 0, offset: 100})
@@ -30,7 +30,7 @@ $(function(){
     new ScrollMagic.Scene({triggerElement: "#about", triggerHook: 0.9})
         .setClassToggle("#about", "show") // add class toggle
         .addTo(controller);
-    new ScrollMagic.Scene({triggerElement: "#services", triggerHook: 0.9})
+    new ScrollMagic.Scene({triggerElement: "#services", triggerHook: 0.6})
         .setClassToggle("#services", "show") // add class toggle
         .addTo(controller);
     new ScrollMagic.Scene({triggerElement: "#work", triggerHook: 0.60})

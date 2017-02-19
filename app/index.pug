@@ -1,8 +1,11 @@
 html(style="margin: 0; padding: 0")
     head
-        <title>Loaft</title>
+        <title>Loaft - Digital Design</title>
         meta(name='viewport', content='width=device-width, initial-scale=1')
         link(rel="preload" as="image" href="/images/landing.jpg")
+        <script type="text/javascript">var i = new Image(); i.src = '/images/landing.jpg';</script>
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
         <!-- Materialize -->
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
         link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css")
@@ -66,7 +69,7 @@ html(style="margin: 0; padding: 0")
                 #about.scrollspy
                     .row.center-align
                         .col.s12.m6.offset-m3
-                            h2.boxed-title Who are we?<span class="typed-cursor">|</span>
+                            h2.boxed-title About Us<span class="typed-cursor">|</span>
                         .col.s12.m8.offset-m2                          
                             p We exist to elevate your brand. Loaft brings together expertise from multiple disciplines to create engaging user experiences. We strive to bring your digital brand to the forefront of your market.  
                             
@@ -81,11 +84,9 @@ html(style="margin: 0; padding: 0")
                                 h4 Karl Li
                                 h5 Lead Designer 
                         
-                            
-
                 #services.scrollspy
                     .row
-                        .col.s12.m8
+                        .col.s12.m6
                             h2.boxed-title Services<span class="typed-cursor">|</span>
                             .blurb-container.hide-on-small-only
                                 ul
@@ -97,26 +98,25 @@ html(style="margin: 0; padding: 0")
                                         h4 We go above and beyond client expectations to create a truly unique product aligned with the goals and objectives of your brand.
                                     li.line3
                                         h4 Our projects are built to deliver on a key triad of performance, reliability and scalability. 
-                    
                     .row.hide-on-med-and-up
                         ul.collapsible.center-align(data-collapsible='accordion')
                             li
                                 .collapsible-header
-                                    img(width="90" src="images/strategy.jpg")  
+                                    img( src="images/strategy.jpg")  
                                     
                                     p Strategy
                                 .collapsible-body
                                     span Strategy is the foundation of all of our projects. We are focused on ROI and maximising customer engagement.
                             li
                                 .collapsible-header
-                                    img(width="90" src="images/creative.jpg") 
+                                    img(src="images/creative.jpg") 
                                     
                                     p Creative
                                 .collapsible-body
                                     span We go above and beyond client expectations to create a truly unique product aligned with the goals and objectives of your brand.
                             li
                                 .collapsible-header
-                                    img(width="90" src="images/technology.jpg")    
+                                    img(src="images/technology.jpg")    
                                     
                                     p Technology
                                 .collapsible-body
@@ -127,7 +127,7 @@ html(style="margin: 0; padding: 0")
                             
                             .top-content 
                                 
-                                img(width="max-width: 100%" src="images/strategy.jpg")  
+                                img(src="images/strategy.jpg")  
                                 h3 Strategy 
                             .slide-content 
                                 ul
@@ -145,7 +145,7 @@ html(style="margin: 0; padding: 0")
                             
                         .col.s12.m4.buckets2
                             .top-content
-                                img(width="max-width:100%" src="images/creative.jpg")   
+                                img( src="images/creative.jpg")   
                                 h3 Creative
                             .slide-content 
                                 ul
@@ -162,12 +162,12 @@ html(style="margin: 0; padding: 0")
                                     
                         .col.s12.m4.buckets3
                             .top-content 
-                                img(width="max-width:100%" src="images/technology.jpg")    
+                                img(src="images/technology.jpg")    
                                 h3 Technology   
                             .slide-content 
                                 ul
                                     li
-                                        p Website 
+                                        p Websites 
                                     li
                                         p API integration
                                     li
@@ -175,80 +175,81 @@ html(style="margin: 0; padding: 0")
                                     li
                                         p Native Applications
                                     li
-                                        p Back End
-                                
-
-        #work.scrollspy
-                    .row
-                        .col.s12.m4.offset-m7
-                            h2.boxed-title.right-align Work<span class="typed-cursor">|</span>
+                                        p 
+                                    
+            #work.scrollspy
+                        .row
+                            .container
+                                .col.s12.m6.offset-m6
+                                    h2.boxed-title.right-align Work<span class="typed-cursor">|</span>
+                            
+                        .mobile-carousel.hide-on-med-and-up(data-flickity='{  "contain": true, "wrapAround":false, "pageDots": true, "prevNextButtons": false, "imagesLoaded": true }')
+                                    .carousel-cell
+                                        img(src='/images/5.jpg')
+                                        .project-name.center-align
+                                            b Gamerholic
+                                            h5 Gaming studio redesign
+                                    .carousel-cell
+                                        img(src='/images/1.jpg')
+                                        .project-name.center-align
+                                            b Omega Construction 
+                                            h5 Logotype work
+                                    .carousel-cell
+                                        img(src='/images/2.jpg')
+                                        .project-name.center-align
+                                            b e.quip Social Media
+                                    .carousel-cell 
+                                        img(src='/images/4.jpg')
+                                        .project-name.center-align
+                                            b Paramount Law Group 
+                                                
+                        .main-carousel.hide-on-small-only(data-flickity='{ "initialIndex": 1,  "wrapAround":false, "pageDots": false, "prevNextButtons": false, "imagesLoaded": true }')
+                                    
+                                    
+                                    .carousel-cell.letter-b 
+                                        img(src='/images/4.jpg')
+                                        .project-name.right-align
+                                            b Paramount Law Group
+                                    .carousel-cell.letter-b 
+                                        img(src='/images/5.jpg')
+                                        .project-name.right-align
+                                            b Gamerholic
+                                            h5 Online gaming store redesign
+                                    .carousel-cell.letter-b 
+                                        img(src='/images/1.jpg')
+                                        .project-name.right-align
+                                            b Omega Construction  
+                                    .carousel-cell.letter-b  
+                                        img(src='/images/2.jpg')
+                                        .project-name.right-align
+                                            b e.quip Social Media                       
                         
-                    .mobile-carousel.hide-on-med-and-up(data-flickity='{  "contain": true, "wrapAround":false, "pageDots": true, "prevNextButtons": false, "imagesLoaded": true }')
-                                .carousel-cell
-                                    img(src='/images/5.jpg')
-                                    .project-name.center-align
-                                        b Gamerholic
-                                        h5 Gaming studio redesign
-                                .carousel-cell
-                                    img(src='/images/1.jpg')
-                                    .project-name.center-align
-                                        b Omega Construction 
-                                        h5 Logotype work
-                                .carousel-cell
-                                    img(src='/images/2.jpg')
-                                    .project-name.center-align
-                                        b e.quip Social Media
-                                .carousel-cell 
-                                    img(src='/images/4.jpg')
-                                    .project-name.center-align
-                                        b Paramount Law Group 
-                                              
-                    .main-carousel.hide-on-small-only(data-flickity='{ "initialIndex": 1,  "wrapAround":false, "pageDots": false, "prevNextButtons": false, "imagesLoaded": true }')
-                                
-                                
-                                .carousel-cell.letter-b 
-                                    img(src='/images/4.jpg')
-                                    .project-name.right-align
-                                        b Paramount Law Group
-                                .carousel-cell.letter-b 
-                                    img(src='/images/5.jpg')
-                                    .project-name.right-align
-                                        b Gamerholic
-                                        h5 Online gaming store redesign
-                                .carousel-cell.letter-b 
-                                    img(src='/images/1.jpg')
-                                    .project-name.right-align
-                                        b Omega Construction  
-                                .carousel-cell.letter-b  
-                                    img(src='/images/2.jpg')
-                                    .project-name.right-align
-                                        b e.quip Social Media                       
-                    
 
         
         
         #contact.scrollspy
-            .container
-                h2.center Got a project?
-                .row(style="margin-bottom: 0")
-                    .col.s12.m8.offset-m2
-                        p.center We'd love to hear about it. Send us an <strong>email</strong> or <strong>leave a message</strong> below and we'll reply as soon as possible!
-                            p.center.email <i class="fa fa-envelope" aria-hidden="true"></i><strong> help@loaft.com.au</strong>
-                form(action="https://formspree.io/amber.accent@gmail.com" id="#contact-form" method="post")
-                    .row
-                            .col.s12.m4.offset-m2.l3.offset-l3
-                                input(name="name" placeholder="Name")
-                            .col.s12.m4.l3
-                                input(name="phone" placeholder="Phone")
-                    .row
-                        .col.s12.m8.offset-m2.l6.offset-l3
-                            input(name="company" placeholder="Company")
-                        .col.s12.m8.offset-m2.l6.offset-l3
-                            input(name="email" placeholder="Email" type="email" required)
-                        .col.s12.m8.offset-m2.l6.offset-l3
-                            textarea(name="message" placeholder="Your message" class="materialize-textarea" required)
-                        .col.s12.m8.offset-m2.l6.offset-l3
-                            button.right(class="btn waves-effect waves-light" type="submit" name="action") Submit
+            #contact-wrapper
+                .container
+                    h2.center Got a project?
+                    .row(style="margin-bottom: 0")
+                        .col.s12.m8.offset-m2
+                            p.center We'd love to hear about it. Send us an <strong>email</strong> or <strong>leave a message</strong> below and we'll reply as soon as possible!
+                                p.center.email <i class="fa fa-envelope" aria-hidden="true"></i><strong> help@loaft.com.au</strong>
+                    form(action="https://formspree.io/amber.accent@gmail.com" id="#contact-form" method="post")
+                        .row
+                                .col.s12.m4.offset-m2.l3.offset-l3
+                                    input(name="name" placeholder="Name")
+                                .col.s12.m4.l3
+                                    input(name="phone" placeholder="Phone")
+                        .row
+                            .col.s12.m8.offset-m2.l6.offset-l3
+                                input(name="company" placeholder="Company")
+                            .col.s12.m8.offset-m2.l6.offset-l3
+                                input(name="email" placeholder="Email" type="email" required)
+                            .col.s12.m8.offset-m2.l6.offset-l3
+                                textarea(name="message" placeholder="Your message" class="materialize-textarea" required)
+                            .col.s12.m8.offset-m2.l6.offset-l3
+                                button.right(class="btn waves-effect waves-light" type="submit" name="action") Submit
 
         footer
             p.right(style="margin: 0;") © Loaft 2017

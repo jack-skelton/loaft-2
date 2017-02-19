@@ -223,7 +223,6 @@ nav
     #about {
         opacity: 0;
         padding-top: $gap;
-        padding-bottom: $gap;
         margin-top: 50px;
        
         h1 {
@@ -251,9 +250,9 @@ nav
     #services {
         
         opacity: 0;
-        
+        padding-top: $gap;
+        margin-top: 50px;
          
-        
         
         .blurb-container{
             position: relative;
@@ -282,7 +281,7 @@ nav
                 }
                 .top-content {
                 background-color: white;
-                
+                img{max-width: 100%;}
                 width: 100%;
                 height: 100%;
                 position: absolute;
@@ -297,7 +296,7 @@ nav
                 bottom: 0px;
                 } 
         .buckets1:hover .top-content {
-                bottom: 250px;
+                bottom: 300px;
                 }       
         .buckets2{
              
@@ -315,6 +314,7 @@ nav
                 .top-content {
                 background-color: white;
                 width: 100%;
+                img{max-width: 100%;}
                 height: 100%;
                 position: absolute;
                 bottom: 0px;
@@ -326,7 +326,7 @@ nav
                 bottom: 0px;
                 }  
         .buckets2:hover .top-content {
-                bottom: 250px;
+                bottom: 300px;
                 }  
         .buckets3{
              background-color: white;
@@ -345,6 +345,7 @@ nav
                 .top-content {
                 background-color: white;
                 width: 100%;
+                img{max-width: 100%;}
                 height: 100%;
                 position: absolute;
                 bottom: 0px;
@@ -357,9 +358,11 @@ nav
                 bottom: 0px;
                 }  
          .buckets3:hover .top-content {
-                bottom: 250px;
+                bottom: 300px;
                 }
-        
+        .collapsible-header{
+            img{padding-top: 30px;width: 90px;}
+        }
     }
 }
                     #work{
@@ -367,8 +370,7 @@ nav
                         opacity: 0;
                          perspective: 1000px;
                         padding-top: $gap;
-                        padding-bottom: 20vh;
-
+                        margin-top: 50px;
                         h1{
                             display: block;
                             font-size: 300px;
@@ -378,8 +380,11 @@ nav
                         }
                         .main-carousel{ top: 5vh;  margin-left: -200; height: 400px; transform: rotateY(-10deg); 
                         .carousel-cell{
+    
                             padding: 15px;
-                            
+                                       -webkit-filter: blur(0px);
+                            filter: blur(0px);
+                        z-index: 9001;
                             img{ width: 350px; max-width:1000px; max-height: 1000px;}
                             transition: all .2s ease-in-out;
                         }
@@ -394,6 +399,7 @@ nav
                             .carousel-cell{
                                 width: 100%;
                             img{ display: block;
+                                margin: auto;
                                 max-width: 100%;
                                 max-height: 100%; }
                            
@@ -401,17 +407,21 @@ nav
                         
                         }
                     }
-#contact{
-    margin-top: $gap;
-    background-color: #FFF2E6;
-    .email {color: $primary}
 
-    .row {margin-bottom: 0;}
-    h2 {padding-top: 3vh;}
-    p {margin-top: 1vh;}
-    button {
-        background-color: $primary;
-        margin-bottom: 3vh;
+#contact {     
+    padding-top: $gap;               
+    #contact-wrapper{
+        margin-top: $gap;
+        background-color: #FFF2E6;
+        .email {color: $primary}
+
+        .row {margin-bottom: 0;}
+        h2 {padding-top: 3vh;}
+        p {margin-top: 1vh;}
+        button {
+            background-color: $primary;
+            margin-bottom: 3vh;
+        }
     }
 }
 
@@ -478,7 +488,6 @@ footer {
     filter: blur(0px);
     transition: all 0.5s;;
 }
-
 
 
 
