@@ -1,30 +1,24 @@
-html
+html(style="margin: 0; padding: 0")
     head
-        <script type="text/javascript">var i = new Image(); i.src = '/images/landing.jpg';</script>
         <title>Loaft</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        <script type="text/javascript">var i = new Image(); i.src = '/images/landing.jpg';</script>
         <!-- Materialize -->
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
         link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js")
-        link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
         <!-- Typing animation -->
         script(src="/js/typed.js")
-        <!- General -->
-        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
-        link(rel="stylesheet" href="css/style.css")
-        link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700")
-        script(src="/js/init.js")
         <!- Flickity.js (slider) -->
         script(src='https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js')
         link(rel='stylesheet', href='https://unpkg.com/flickity@2/dist/flickity.min.css')
-        <!- Reveal elements on scroll -->
-        script(src='https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js')
-        script.
-            window.sr = ScrollReveal();
         <!- Scroll animations -->
         script(src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js")
-        meta(name='viewport', content='width=device-width, initial-scale=1')
+        <!- General -->
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+        link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600")
+        link(rel="stylesheet" href="css/style.css")
+        script(src="/js/init.js")
             
     body
         nav
@@ -64,7 +58,7 @@ html
                         h1 modern <strong>web</strong> and <strong>Graphic</strong> design<span class="typed-cursor">|</span>
                     #heading
                         #typer
-                            h1  We are <br>
+                            h1(font-size: 3.5rem)  We are <br>
                                 span.element
              
         #content.container
@@ -255,7 +249,7 @@ html
                             button.right(class="btn waves-effect waves-light" type="submit" name="action") Submit
 
         footer
-            p.right © Loaft 2017
+            p.right(style="margin: 0;") © Loaft 2017
             
             
             
@@ -264,24 +258,4 @@ html
 
 
 
-
-        //         
-            #contact.scrollspy
-                .row
-                    .col.s12.m6
-                        h1 Let's get in touch
-                        .row.boxed-title
-                            form.col.s12
-                                .row
-                                .input-field.col.s6
-                                    i.material-icons.prefix mode_edit
-                                    textarea#icon_prefix2.materialize-textarea
-                                    label(for='icon_prefix2') First Name
-                    .col.s12.m6
-                        h1 Loaft
-                        h2 Sydney Australia
-                        h2 help@loaft.com.au
-
-            script.
-                sr.reveal('nav',{ duration: 2000 });     
 

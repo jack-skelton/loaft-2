@@ -3,7 +3,6 @@ var sass = require('gulp-sass')
 var pug = require('gulp-pug')
 var uglify = require('gulp-uglify');
 var cleanCSS = require('gulp-clean-css');
-
 var browserSync = require('browser-sync').create();
 var del = require('del');
 var runSequence = require('run-sequence');

@@ -209,39 +209,38 @@ nav
 }
 
 .boxed-title{border-color: black;
-        padding: 1.5rem 1rem;
-        border: 2px solid grey;
-        }
+    padding: 1.5rem 1rem;
+    border: 2px solid grey;
+}
         
 .show {
     opacity: 1 !important;
     transform: translate3d(0, -50px, 0px);
     transition: all 1s ease-out
 }
+
 #content {
+    background-color: white;
 
-  background-color: white;
-
-   #about {
+    #about {
+        opacity: 0;
+        padding-top: $gap;
+        padding-bottom: $gap;
        
-       opacity: 0;
-       padding-top: $gap;
-       padding-bottom: $gap;
-       
-       h1{
-         font-weight: 700;
-         font-size: 5.625rem;
-         margin: 0 auto;
+        h1 {
+            font-weight: 600;
+            font-size: 5.625rem;
+            margin: 0 auto;
         }
-       img{
-           border-radius: 50%;
-           width: 100px;
-           margin: 20px;
-       } 
+        img {
+            border-radius: 50%;
+            width: 100px;
+            margin: 20px;
+        } 
        
-    .col.s6.m6{
-        @media only screen and (min-width: 740px) {
-         #jack{float:right;margin-right: 30px;
+        .col.s6.m6{
+            @media only screen and (min-width: 740px) {
+            #jack{float:right;margin-right: 30px;
         }
         #karl{float:left;margin-left: 30px;
         }
@@ -382,7 +381,7 @@ nav
                         .carousel-cell{
                             padding: 15px;
                             
-                            img{ width: 400px; max-width:1000px; max-height: 1000px;}
+                            img{ width: 350px; max-width:1000px; max-height: 1000px;}
                             transition: all .2s ease-in-out;
                         }
                         }
