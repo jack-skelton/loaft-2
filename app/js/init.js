@@ -4,15 +4,15 @@ $(function(){
         $(".element").typed({
         //strings: ["web developers.", "graphic designers.","solution architects."],
         //"modern <strong>web</strong> and <strong>fraphic</strong> design. "<strong>digital</strong> specialists and <strong>growth</strong> hackers"
-        strings: ["modern <strong>web</strong> and <strong>graphic</strong> design", "<strong>digital</strong> specialists and <strong>growth</strong> hackers", "a design studio called <strong>Loaft.</strong>"],
+        strings: ["modern <strong>web</strong> and <strong>graphic</strong> design.", "<strong>digital</strong> specialists and <strong>growth</strong> hackers"],
         typeSpeed: 30,
-        loop: false,
+        loop: true,
         showCursor: true,
-        backDelay: 2000,
-        startDelay: 0
-        /*preStringTyped: function() {
+        backDelay: 3500,
+        startDelay: 0,
+        preStringTyped: function() {
             $("#typer").toggleClass("typer-change")
-        }*/
+        }
     })
 });
 
