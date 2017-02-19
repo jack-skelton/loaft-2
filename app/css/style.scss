@@ -255,7 +255,6 @@ nav
         
          
         
-        
         .blurb-container{
             position: relative;
             min-height: 150px;
@@ -283,7 +282,7 @@ nav
                 }
                 .top-content {
                 background-color: white;
-                
+                img{max-width: 100%;}
                 width: 100%;
                 height: 100%;
                 position: absolute;
@@ -298,7 +297,7 @@ nav
                 bottom: 0px;
                 } 
         .buckets1:hover .top-content {
-                bottom: 250px;
+                bottom: 300px;
                 }       
         .buckets2{
              
@@ -316,6 +315,7 @@ nav
                 .top-content {
                 background-color: white;
                 width: 100%;
+                img{max-width: 100%;}
                 height: 100%;
                 position: absolute;
                 bottom: 0px;
@@ -327,7 +327,7 @@ nav
                 bottom: 0px;
                 }  
         .buckets2:hover .top-content {
-                bottom: 250px;
+                bottom: 300px;
                 }  
         .buckets3{
              background-color: white;
@@ -346,6 +346,7 @@ nav
                 .top-content {
                 background-color: white;
                 width: 100%;
+                img{max-width: 100%;}
                 height: 100%;
                 position: absolute;
                 bottom: 0px;
@@ -358,9 +359,11 @@ nav
                 bottom: 0px;
                 }  
          .buckets3:hover .top-content {
-                bottom: 250px;
+                bottom: 300px;
                 }
-        
+        .collapsible-header{
+            img{padding-top: 30px;width: 90px;}
+        }
     }
 }
                     #work{
@@ -479,7 +482,6 @@ footer {
     filter: blur(0px);
     transition: all 0.5s;;
 }
-
 
 
 
