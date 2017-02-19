@@ -33,7 +33,16 @@ h5,h6, { font-weight: 400;}
 
 
 //----------------------------------------
-
+.boxed-title{border-color: black;
+    padding: 1.5rem 1rem;
+    border: 2px solid grey;
+}
+        
+.show {
+    opacity: 1 !important;
+    transform: translate3d(0, -50px, 0px);
+    transition: all 1s ease-out
+}
 
 nav
 {
@@ -133,7 +142,6 @@ nav
 
 }
 
-
 #landing {
     background: url(/images/landing.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -208,24 +216,15 @@ nav
     }
 }
 
-.boxed-title{border-color: black;
-    padding: 1.5rem 1rem;
-    border: 2px solid grey;
-}
-        
-.show {
-    opacity: 1 !important;
-    transform: translate3d(0, -50px, 0px);
-    transition: all 1s ease-out
-}
-
 #content {
     background-color: white;
+            margin: 0 !important;
 
     #about {
         opacity: 0;
         padding-top: $gap;
         padding-bottom: $gap;
+        margin-top: 50px;
        
         h1 {
             font-weight: 600;
@@ -237,18 +236,18 @@ nav
             width: 100px;
             margin: 20px;
         } 
-       
         .col.s6.m6{
             @media only screen and (min-width: 740px) {
-            #jack{float:right;margin-right: 30px;
-        }
-        #karl{float:left;margin-left: 30px;
+            #jack{float:right; margin-right: 30px;}
+            #karl{float:left; margin-left: 30px;}
+            }   
+            #jack, #karl {
+                h4 {color: $primary-darkest;}
+                //h5 {color: $primary-darkest;}
+            }
         }
     }
-    }
-      
-
-       }
+    
     #services {
         
         opacity: 0;

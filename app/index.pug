@@ -2,7 +2,7 @@ html(style="margin: 0; padding: 0")
     head
         <title>Loaft</title>
         meta(name='viewport', content='width=device-width, initial-scale=1')
-        <script type="text/javascript">var i = new Image(); i.src = '/images/landing.jpg';</script>
+        link(rel="preload" as="image" href="/images/landing.jpg")
         <!-- Materialize -->
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
         link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css")
@@ -61,119 +61,121 @@ html(style="margin: 0; padding: 0")
                             h1(font-size: 3.5rem)  We are <br>
                                 span.element
              
-        #content.container
-            #about.scrollspy
-                .row.center-align
-                    .col.s12.m6.offset-m3
-                        h2.boxed-title Who are we?<span class="typed-cursor">|</span>
-                    .col.s12.m8.offset-m2                          
-                        p We exist to elevate your brand. Loaft brings together expertise from multiple disciplines to create engaging user experiences. We strive to bring your digital brand to the forefront of your market.  
-                        
-                    .col.s6.m6
-                        #jack
-                            img( src="/images/jack.jpg")
-                            h4 Jack Skelton
-                            h5 Lead Developer
-                    .col.s6.m6
-                        #karl
-                            img(src="/images/karl.jpg")
-                            h4 Karl Li
-                            h5 Lead Designer 
+        #content
+            .container
+                #about.scrollspy
+                    .row.center-align
+                        .col.s12.m6.offset-m3
+                            h2.boxed-title Who are we?<span class="typed-cursor">|</span>
+                        .col.s12.m8.offset-m2                          
+                            p We exist to elevate your brand. Loaft brings together expertise from multiple disciplines to create engaging user experiences. We strive to bring your digital brand to the forefront of your market.  
+                            
+                        .col.s6.m6
+                            #jack
+                                img( src="/images/jack.jpg")
+                                h4 Jack Skelton
+                                h5 Senior Developer
+                        .col.s6.m6
+                            #karl
+                                img(src="/images/karl.jpg")
+                                h4 Karl Li
+                                h5 Lead Designer 
                         
                             
 
-            #services.scrollspy
-                .row
-                    .col.s12.m8
-                        h2.boxed-title Services<span class="typed-cursor">|</span>
-                        .blurb-container.hide-on-small-only
-                            ul
-                                li.line0.opacity
-                                    h4 We specialise in three different areas:
-                                li.line1
-                                    h4 Strategy is the foundation of all of our projects. We are focused on ROI and maximising customer engagement.
-                                li.line2
-                                    h4 We go above and beyond client expectations to create a truly unique product aligned with the goals and objectives of your brand.
-                                li.line3
-                                    h4 Our projects are built to deliver on a key triad of performance, reliability and scalability. 
-                .row.hide-on-med-and-up
-                    ul.collapsible.center-align(data-collapsible='accordion')
-                        li
-                            .collapsible-header
-                                img(width="90" src="images/strategy.jpg")  
-                                
-                                p Strategy
-                            .collapsible-body
-                                span Strategy is the foundation of all of our projects. We are focused on ROI and maximising customer engagement.
-                        li
-                            .collapsible-header
-                                img(width="90" src="images/creative.jpg") 
-                                
-                                p Creative
-                            .collapsible-body
-                                span We go above and beyond client expectations to create a truly unique product aligned with the goals and objectives of your brand.
-                        li
-                            .collapsible-header
-                                img(width="90" src="images/technology.jpg")    
-                                
-                                p Technology
-                            .collapsible-body
-                                span Our projects are built to deliver on a key triad of performance, reliability and scalability. 
+                #services.scrollspy
+                    .row
+                        .col.s12.m8
+                            h2.boxed-title Services<span class="typed-cursor">|</span>
+                            .blurb-container.hide-on-small-only
+                                ul
+                                    li.line0.opacity
+                                        h4 We specialise in three different areas:
+                                    li.line1
+                                        h4 Strategy is the foundation of all of our projects. We are focused on ROI and maximising customer engagement.
+                                    li.line2
+                                        h4 We go above and beyond client expectations to create a truly unique product aligned with the goals and objectives of your brand.
+                                    li.line3
+                                        h4 Our projects are built to deliver on a key triad of performance, reliability and scalability. 
+                    
+                    .row.hide-on-med-and-up
+                        ul.collapsible.center-align(data-collapsible='accordion')
+                            li
+                                .collapsible-header
+                                    img(width="90" src="images/strategy.jpg")  
+                                    
+                                    p Strategy
+                                .collapsible-body
+                                    span Strategy is the foundation of all of our projects. We are focused on ROI and maximising customer engagement.
+                            li
+                                .collapsible-header
+                                    img(width="90" src="images/creative.jpg") 
+                                    
+                                    p Creative
+                                .collapsible-body
+                                    span We go above and beyond client expectations to create a truly unique product aligned with the goals and objectives of your brand.
+                            li
+                                .collapsible-header
+                                    img(width="90" src="images/technology.jpg")    
+                                    
+                                    p Technology
+                                .collapsible-body
+                                    span Our projects are built to deliver on a key triad of performance, reliability and scalability. 
 
-                .row.center-align.hide-on-small-only
-                    .col.s12.m4.buckets1
-                        
-                        .top-content 
+                    .row.center-align.hide-on-small-only
+                        .col.s12.m4.buckets1
                             
-                            img(width="250" src="images/strategy.jpg")  
-                            h3 Strategy 
-                        .slide-content 
-                            ul
-                                li
-                                    p Customer Research
-                                li
-                                    p Persona Development
-                                li
-                                    p SEO optimisation
-                                li
-                                    p Brand Strategy
-                                li
-                                    p Content Strategy
+                            .top-content 
                                 
-                        
-                    .col.s12.m4.buckets2
-                        .top-content
-                            img(width="250" src="images/creative.jpg")   
-                            h3 Creative
-                        .slide-content 
-                            ul
-                                li
-                                    p UX
-                                li
-                                    p Visual Design
-                                li
-                                    p UI
-                                li
-                                    p Copywriting
-                                li
-                                    p Logotype
-                                
-                    .col.s12.m4.buckets3
-                        .top-content 
-                            img(width="250" src="images/technology.jpg")    
-                            h3 Technology   
-                        .slide-content 
-                            ul
-                                li
-                                    p Website 
-                                li
-                                    p API integration
-                                li
-                                    p CMS Integration
-                                li
-                                    p Native Applications
-                                li
-                                    p Back End
+                                img(width="max-width: 100%" src="images/strategy.jpg")  
+                                h3 Strategy 
+                            .slide-content 
+                                ul
+                                    li
+                                        p Customer Research
+                                    li
+                                        p Persona Development
+                                    li
+                                        p SEO optimisation
+                                    li
+                                        p Brand Strategy
+                                    li
+                                        p Content Strategy
+                                    
+                            
+                        .col.s12.m4.buckets2
+                            .top-content
+                                img(width="max-width:100%" src="images/creative.jpg")   
+                                h3 Creative
+                            .slide-content 
+                                ul
+                                    li
+                                        p UX
+                                    li
+                                        p Visual Design
+                                    li
+                                        p UI
+                                    li
+                                        p Copywriting
+                                    li
+                                        p Logotype
+                                    
+                        .col.s12.m4.buckets3
+                            .top-content 
+                                img(width="max-width:100%" src="images/technology.jpg")    
+                                h3 Technology   
+                            .slide-content 
+                                ul
+                                    li
+                                        p Website 
+                                    li
+                                        p API integration
+                                    li
+                                        p CMS Integration
+                                    li
+                                        p Native Applications
+                                    li
+                                        p Back End
                                 
 
         #work.scrollspy
